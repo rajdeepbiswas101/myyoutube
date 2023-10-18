@@ -1,0 +1,64 @@
+@media (max-width: 750px) {
+    .MainHeader {
+        flex-direction: column;
+    }
+}
+
+.MainHeader {
+    min-height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    -webkit-box-shadow: 0px 11px 49px 10px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 11px 49px 10px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 11px 49px 10px rgba(0, 0, 0, 0.31);
+
+    .searchBar {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+
+        .searchContainer {
+            position: relative;
+            display: inline-block;
+
+            .searchInput {
+                padding: 0.8rem 2.5rem 0.8rem 1.5rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 35rem;
+                font-size: medium;
+                box-sizing: border-box;
+                margin: 0 1rem 0.1rem 1rem;
+            }
+
+            
+
+            .searchIcon {
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                background: url("./search-icon.svg") no-repeat center center;
+                background-size: cover;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+
+            @media (max-width: 540px) {
+                .searchInput {
+                    width: calc(100vw*0.9);
+                }
+            }
+
+            .searchIcon:hover {
+                transform: translateY(-50%) scale(1.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.Thumbnail {
+    justify-content: space-between;
+    img{
+        border-radius: 0.8rem;
+    }
+    .title{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        font-weight: bold;
+        font-size: medium;
+        line-height: 1.5em;
+    }
+    .channelTitle{
+font-size: smaller;
+line-height: 1.5em;
+color: gray;
+    }
+}
